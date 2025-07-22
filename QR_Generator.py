@@ -83,3 +83,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+from selenium.webdriver.chrome.service import Service
+
+service = Service(executable_path='chromedriver.exe')
+driver = webdriver.Chrome(service=service, options=options)
